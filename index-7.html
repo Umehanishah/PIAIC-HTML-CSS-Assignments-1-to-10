@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+   
+  <h1>Chapter # 7 - Forms</h1>
+ 
+    <form action="/action_page.php">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" value="">
+      </div>
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="name" value="">
+        <br><br>
+        <input type="submmit" value="Submit">
+    </form>
+
+    
+    <form>
+        
+        <h2>Your Review: </h2>
+        <p>How did you hear about us?</p>
+        <style>
+            .dropbtn {
+              color: rgb(0, 0, 0);
+              padding: 10px;
+              font-size: 10px;
+              border: 1px black;
+              cursor: pointer;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 100px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #f1f1f1}
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+              border-radius: 5px;
+            }
+            
+            </style>    
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+          </div>
+
+
+        <p>Would you visit again?</p>
+          <input type="radio" id="yes" name="fav_language" value="Yes">
+          <label for="Yes">Yes</label>
+          <input type="radio" id="no" name="fav_language" value="no">
+          <label for="no">No</label>
+          <input type="radio" id="Maybe" name="fav_language" value="Maybe">
+          <label for="Maybe">Maybe</label>
+        
+    <h2>Comments:</h2>
+    <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>   
+    <br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Sign me up for email updates</label><br>
+    <br>
+    <input type="submit" value="Submit review">
+</form>
+</body>
+</html>
